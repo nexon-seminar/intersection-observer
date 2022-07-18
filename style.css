@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+section article {
+  width: 100%;
+  height: 180px;
+  background: gray;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: 0.5s;
+}
+section article.on {
+  opacity: 1;
+  transform: translateX(0px);
+}
+section article.card1 {
+  background: linear-gradient(45deg, fuchsia, plum);
+}
+section article.card2 {
+  background: linear-gradient(45deg, hotpink, pink);
+}
+section article.card3 {
+  background: linear-gradient(45deg, orange, yellow);
+}
+section article.card4 {
+  background: linear-gradient(45deg, lightgreen, cyan);
+}
+section article.card5 {
+  background: linear-gradient(45deg, cornflowerblue, aqua);
+}
+
+/*# sourceMappingURL=style.css.map */
